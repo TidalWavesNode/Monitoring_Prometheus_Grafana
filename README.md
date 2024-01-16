@@ -32,10 +32,10 @@
 ### Example config, add remote server IP with port 9100
 
 #example
-#scrape_configs:
-  #- job_name: "prometheus"
-    #static_configs:
-      #- targets: ["localhost:9090"]
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
 
   - job_name: "remote_collector"
     scrape_interval: 10s
