@@ -3,23 +3,23 @@
 ### Prometheus and Node Exporter Install
 
 #### Download script:
-wget https://raw.githubusercontent.com/TidalWavesNode/Monitoring_Prometheus_Grafana/main/prometheus.sh
+    wget https://raw.githubusercontent.com/TidalWavesNode/Monitoring_Prometheus_Grafana/main/prometheus.sh
 
 #### Change permissions:
-chmod +x prometheus.sh
+    chmod +x prometheus.sh
 
 #### Run script:
-bash prometheus.sh
+    bash prometheus.sh
 
 ### Grafana Server Install:
 
 #### Download script:
-wget https://raw.githubusercontent.com/TidalWavesNode/Monitoring_Prometheus_Grafana/main/grafana.sh
+    wget https://raw.githubusercontent.com/TidalWavesNode/Monitoring_Prometheus_Grafana/main/grafana.sh
 
 #### Change permissions:
 
-chmod +x grafana.sh
+    chmod +x grafana.sh
 
 #### Run script:
-bash grafana.sh
+    bash grafana.sh
 
