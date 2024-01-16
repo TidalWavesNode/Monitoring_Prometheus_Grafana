@@ -34,6 +34,9 @@
 ![image](https://github.com/TidalWavesNode/Monitoring_Prometheus_Grafana/assets/33072338/4ad16966-fc5d-4894-a880-49995a0d0c51)
 
 
-### Goto Grafana by going to http://MONITORINGIP:3000
+## Access Grafana
 
-### user name (admin) pw (admin)
+    http://MONITORINGIP:3000
+
+    user name (admin) 
+    pw (admin)
