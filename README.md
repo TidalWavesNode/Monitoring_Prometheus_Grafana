@@ -31,15 +31,16 @@
 
 ### Example config, add remote server IP with port 9100
 
+#!/bin/bash
 #example
 scrape_configs:
-  -job_name: "prometheus"
+  - job_name: "prometheus"
     static_configs:
-      -targets: ["localhost:9090"]
+      - targets: ["localhost:9090"]
 
-  -job_name: "remote_collector"
+  - job_name: "remote_collector"
     scrape_interval: 10s
     static_configs:
-      -targets:
-        -"SERVERIP:9100"
-        -"localhost:9100"
+      - targets:
+        - "SERVERIP:9100"
+        - "localhost:9100"
