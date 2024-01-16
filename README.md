@@ -31,16 +31,5 @@
 
 ### Example config, add remote server IP with port 9100
 
-#!/bin/bash
-#example
-scrape_configs:
-  - job_name: "prometheus"
-    static_configs:
-      - targets: ["localhost:9090"]
+![image](https://github.com/TidalWavesNode/Monitoring_Prometheus_Grafana/assets/33072338/4ad16966-fc5d-4894-a880-49995a0d0c51)
 
-  - job_name: "remote_collector"
-    scrape_interval: 10s
-    static_configs:
-      - targets:
-        - "SERVERIP:9100"
-        - "localhost:9100"
