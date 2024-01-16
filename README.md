@@ -23,3 +23,23 @@
 #### Run script:
     bash grafana.sh
 
+## Configure Prometheus to Monitor Client Nodes
+
+### On the monitoring server running Prometheus, open prometheus.yml
+
+    nano /etc/prometheus/prometheus.yml
+
+### Example config, add remote server IP with port 9100
+
+#example
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  - job_name: "remote_collector"
+    scrape_interval: 10s
+    static_configs:
+      - targets:
+        - "SERVERIP:9100"
+        - "localhost:9100"
